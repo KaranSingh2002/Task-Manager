@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { logout } from '../redux/actions/authActions';
+import '../components/Styles/Navbar.css'; // Ensure correct path to your Navbar.css or appropriate CSS file
 
 const Navbar = () => {
 
@@ -18,11 +19,11 @@ const Navbar = () => {
 
   return (
     <>
-      <header className='flex justify-between sticky top-0 p-4 bg-white shadow-sm items-center'>
+      <header className='flex justify-between sticky top-0 p-4 items-center'>
         <h2 className='cursor-pointer uppercase font-medium'>
           <Link to="/"> Task Manager </Link>
         </h2>
-        <ul className='hidden md:flex gap-4 uppercase font-medium'>
+        <ul className={`hidden md:flex gap-4 uppercase font-medium ${isNavbarOpen ? 'open' : ''}`}>
           {authState.isLoggedIn ? (
             <>
               <li className="bg-blue-500 text-white hover:bg-blue-600 font-medium rounded-md">
@@ -34,7 +35,7 @@ const Navbar = () => {
             <li className='py-2 px-3 cursor-pointer text-primary hover:bg-gray-100 transition rounded-sm'><Link to="/login">Login</Link></li>
           )}
         </ul>
-        <span className='md:hidden cursor-pointer' onClick={toggleNavbar}><i className="fa-solid fa-bars"></i></span>
+        <span className='md:hidden cursor-pointer navbar-toggle' onClick={toggleNavbar}><i className="fa-solid fa-bars"></i></span>
 
 
         {/* Navbar displayed as sidebar on smaller screens */}
@@ -57,7 +58,7 @@ const Navbar = () => {
         </div>
       </header>
     </>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

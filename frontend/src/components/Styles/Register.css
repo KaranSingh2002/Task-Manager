@@ -1,0 +1,85 @@
+/* Signup.css */
+
+.signup-container {
+    background-image: url('../Image/l.jpg'); /* Adjust the path as per your project structure */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .signup-form {
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 2rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif; /* Example: Change the font family */
+  }
+  
+  .signup-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .signup-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .signup-form input[type="text"],
+  .signup-form input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 0.25rem;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .signup-form input[type="text"]:focus,
+  .signup-form input[type="password"]:focus {
+    outline: none;
+    border-color: #4a90e2;
+  }
+  
+  .signup-form .error-message {
+    color: #e53e3e;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  .signup-form button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    background-color: #3490dc;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-form button:hover {
+    background-color: #2779bd;
+  }
+  
+  .signup-form .login-link {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: #3490dc;
+  }
+  

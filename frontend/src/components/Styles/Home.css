@@ -1,0 +1,45 @@
+/* Home.css */
+
+.home-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Equal width columns */
+    gap: 20px; /* Adjust gap between columns */
+    align-items: center;
+  }
+  
+  .home-container .welcome-text {
+    text-align: center;
+    color: #333; /* Adjust text color */
+  }
+  
+  .home-container .welcome-text h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .home-container .welcome-text .join-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3490dc; /* Button background color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .home-container .welcome-text .join-link:hover {
+    background-color: #2779bd; /* Darker shade on hover */
+  }
+  
+  .home-container .image-container {
+    text-align: center;
+  }
+  
+  .home-container .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  

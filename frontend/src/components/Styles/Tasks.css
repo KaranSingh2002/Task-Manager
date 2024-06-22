@@ -1,0 +1,99 @@
+/* Tasks.css */
+
+/* Container for tasks */
+.tasks-container {
+    margin: 2rem auto;
+    max-width: 700px;
+    padding: 1rem;
+  }
+  
+  /* Heading for tasks */
+  .tasks-heading {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  /* Message when no tasks are found */
+  .no-tasks {
+    width: 600px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Add new task button */
+  .add-task-btn {
+    background-color: #3490dc;
+    color: white;
+    font-weight: medium;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-task-btn:hover {
+    background-color: #2779bd;
+  }
+  
+  /* Individual task container */
+  .task-item {
+    background-color: white;
+    margin: 1rem 0;
+    padding: 1rem;
+    color: #555;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Task header */
+  .task-header {
+    display: flex;
+    align-items: center;
+    font-weight: medium;
+    color: #333;
+  }
+  
+  /* Icons for edit and delete */
+  .task-actions i {
+    margin-left: 0.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .task-actions i:hover {
+    color: #000;
+  }
+  
+  /* Tooltip styles */
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position the tooltip above the text */
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  

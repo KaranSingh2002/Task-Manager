@@ -1,0 +1,49 @@
+/* MainLayout.css */
+
+/* Main layout styles */
+.main-layout {
+    position: relative;
+    background: linear-gradient(135deg, #f8fafc, #e8f0fe);
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Content area styles */
+  .content {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Ensure Navbar has a slight shadow for a raised effect */
+  nav {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Utility classes for spacing and alignment */
+  .mt-4 {
+    margin-top: 1rem;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+  
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .bg-gray-50 {
+    background-color: #f8fafc;
+  }
+  

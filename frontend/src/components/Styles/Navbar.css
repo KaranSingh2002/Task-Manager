@@ -1,0 +1,95 @@
+/* Navbar.css */
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif; /* Example: Change the font family */
+  }
+  
+  header h2 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  header h2 a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  header ul {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  header ul li {
+    list-style: none;
+  }
+  
+  header ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  header ul li a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  header ul li.bg-blue-500 a {
+    background-color: #3490dc;
+    color: #ffffff;
+  }
+  
+  header ul li.bg-blue-500 a:hover {
+    background-color: #2779bd;
+  }
+  
+  header .md\\:hidden {
+    display: none;
+  }
+  
+  header .navbar-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    header .navbar-toggle {
+      display: block;
+    }
+  
+    header ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: #f9f9f9;
+      width: 200px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+  
+    header ul.open {
+      display: flex;
+    }
+  
+    header ul li {
+      width: 100%;
+    }
+  
+    header ul li a {
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0;
+      border-bottom: 1px solid #e2e2e2;
+    }
+  
+    header ul li a:hover {
+      background-color: #e2e2e2;
+    }
+  }
+  
