@@ -140,3 +140,6 @@ Inside backend folder:
 
 npm run dev: Starts backend using nodemon.
 npm start: Starts backend without nodemon.
+
+Some Functions may not work like due date and other things 
+
